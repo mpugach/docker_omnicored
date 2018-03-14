@@ -1,6 +1,6 @@
 # mpugach/omnicored
 
-An omnicore docker image.
+An [omnicore](https://github.com/OmniLayer/omnicore) docker image.
 
 ## Tags
 
