@@ -27,7 +27,13 @@ RUN apk add --no-cache git autoconf automake g++ make file && \
     ./configure \
         LDFLAGS="-L${BDB_PREFIX}/lib/" \
         CPPFLAGS="-I${BDB_PREFIX}/include/" \
-        CXXFLAGS="--param ggc-min-expand=1 --param ggc-min-heapsize=32768" \
+        --disable-tests \
+        --disable-bench \
+        --disable-ccache \
+        --with-gui=no \
+        --with-utils \
+        --with-libs \
+        --with-daemon \
         --prefix=$BITCOIN_ROOT && \
     make -j4 && \
     make install && \
