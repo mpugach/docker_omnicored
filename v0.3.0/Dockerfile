@@ -11,7 +11,7 @@ WORKDIR /omnicore
 
 RUN apk update && \
     apk upgrade && \
-    apk add openssl boost libevent libtool boost-dev openssl-dev libevent-dev
+    apk add --no-cache libressl boost libevent libtool libzmq boost-dev libressl-dev libevent-dev zeromq-dev
 
 RUN apk add --no-cache git autoconf automake g++ make file && \
     git clone -b v0.3.0 https://github.com/OmniLayer/omnicore.git $BITCOIN_REPO && \
