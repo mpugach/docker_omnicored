@@ -31,10 +31,15 @@ RUN apk add --no-cache git autoconf automake g++ make file && \
         --prefix=$BITCOIN_ROOT && \
     make -j4 && \
     make install && \
-    apk del git autoconf automake g++ make file && \
     rm -rf $BITCOIN_ROOT/db-4.8.30.NC* && \
     rm -rf $BDB_PREFIX/docs && \
-    rm -rf $BITCOIN_REPO
+    rm -rf $BITCOIN_REPO && \
+    strip $BITCOIN_ROOT/bin/omnicore-cli && \
+    strip $BITCOIN_ROOT/bin/bitcoin-tx && \
+    strip $BITCOIN_ROOT/bin/omnicored && \
+    strip $BITCOIN_ROOT/lib/libbitcoinconsensus.a && \
+    strip $BITCOIN_ROOT/lib/libbitcoinconsensus.so.0.0.0 && \
+    apk del git autoconf automake g++ make file
 
 COPY docker-entrypoint.sh /entrypoint.sh
 
