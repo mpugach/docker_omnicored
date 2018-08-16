@@ -1,4 +1,4 @@
-FROM mpugach/omnicored:v0.3.0-unpriv
+FROM mpugach/omnicored:v0.3.0-unpriv-alpine
 
 LABEL maintainer="Maksym Pugach <pugach.m@gmail.com>"
 
