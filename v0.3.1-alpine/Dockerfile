@@ -1,6 +1,6 @@
 FROM alpine:3.8
 
-LABEL maintainer="Maksym Pugach <pugach.m@gmail.com>"
+LABEL maintainer="Maksym Pugach <pugach.m@gmail.com>, Daniel Zhou <danichau93@gmail.com>"
 
 ENV BITCOIN_ROOT=/omnicore
 ENV BDB_PREFIX="${BITCOIN_ROOT}/db4" BITCOIN_REPO="${BITCOIN_ROOT}/repo" PATH="${BITCOIN_ROOT}/bin:$PATH" BITCOIN_DATA="${BITCOIN_ROOT}/data"
