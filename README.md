@@ -4,7 +4,9 @@ An [omnicore](https://github.com/OmniLayer/omnicore) docker image.
 
 ## Tags
 
-- `v0.3.0-alpine`, `latest` ([v0.3.0-alpine/Dockerfile](https://github.com/mpugach/docker_omnicored/blob/master/v0.3.0-alpine/Dockerfile))
+
+- `v0.5.0-alpine`, `latest` ([v0.5.0-alpine/Dockerfile](https://github.com/mpugach/docker_omnicored/blob/master/v0.5.0-alpine/Dockerfile))
+- `v0.3.0-alpine` ([v0.3.0-alpine/Dockerfile](https://github.com/mpugach/docker_omnicored/blob/master/v0.3.0-alpine/Dockerfile))
 - `v0.3.0-curl-alpine` ([v0.3.0-curl-alpine/Dockerfile](https://github.com/mpugach/docker_omnicored/blob/master/v0.3.0-curl-alpine/Dockerfile))
 - `v0.3.0-unpriv-alpine` ([v0.3.0-unpriv-alpine/Dockerfile](https://github.com/mpugach/docker_omnicored/blob/master/v0.3.0-unpriv-alpine/Dockerfile))
 - `v0.3.0-unpriv-curl-alpine` ([v0.3.0-unpriv-curl-alpine/Dockerfile](https://github.com/mpugach/docker_omnicored/blob/master/v0.3.0-unpriv-curl-alpine/Dockerfile))
