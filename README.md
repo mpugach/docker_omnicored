@@ -39,3 +39,32 @@ docker run --rm --name omnicore-server -it mpugach/omnicored \
   -rpcpassword=password -rpcallowip=172.0.0.0/8 \
   -printtoconsole
 ```
+
+for v0.6.0 
+
+`docker-compose` example:
+
+```yml
+version: '3'
+
+services:
+  omnicored:
+    image: mpugach/omnicored
+    volumes:
+      - omnicore:/home/bitcoin/.bitcoin
+    ports:
+      - "127.0.0.1:18332:18332"
+    command: "-server -regtest -txindex -rpcuser=username -rpcpassword=password -rpcallowip=172.0.0.0/8 -printtoconsole -rpcbind=0.0.0.0:18332"
+
+volumes:
+  omnicore:
+```
+
+command-line example:
+
+```sh
+docker run --rm --name omnicore-server -it mpugach/omnicored \
+  -server -regtest -txindex -rpcuser=username \
+  -rpcpassword=password -rpcallowip=172.0.0.0/8 \
+  -printtoconsole  -rpcbind=0.0.0.0:18332
+```
