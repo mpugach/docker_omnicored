@@ -63,6 +63,9 @@ COPY --from=builder ${BITCOIN_ROOT}/bin ${BITCOIN_ROOT}/bin
 COPY --from=builder ${BITCOIN_ROOT}/lib ${BITCOIN_ROOT}/lib
 COPY --from=builder ${BITCOIN_ROOT}/include ${BITCOIN_ROOT}/include
 
+WORKDIR ${BITCOIN_DATA}
+VOLUME ["${BITCOIN_DATA}"]
+
 COPY docker-entrypoint.sh /entrypoint.sh
 
 RUN chmod u+x /entrypoint.sh
