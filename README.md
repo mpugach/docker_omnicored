@@ -4,7 +4,8 @@ An [omnicore](https://github.com/OmniLayer/omnicore) docker image.
 
 ## Tags
 
-- `v0.6.0-alpine`, `latest` ([v0.6.0-alpine/Dockerfile](https://github.com/mpugach/docker_omnicored/blob/master/v0.6.0-alpine/Dockerfile))
+- `v0.7.0-alpine`, `latest` ([v0.7.0-alpine/Dockerfile](https://github.com/mpugach/docker_omnicored/blob/master/v0.6.0-alpine/Dockerfile))
+- `v0.6.0-alpine` ([v0.6.0-alpine/Dockerfile](https://github.com/mpugach/docker_omnicored/blob/master/v0.6.0-alpine/Dockerfile))
 - `v0.5.0-alpine` ([v0.5.0-alpine/Dockerfile](https://github.com/mpugach/docker_omnicored/blob/master/v0.5.0-alpine/Dockerfile))
 - `v0.3.0-alpine` ([v0.3.0-alpine/Dockerfile](https://github.com/mpugach/docker_omnicored/blob/master/v0.3.0-alpine/Dockerfile))
 - `v0.3.0-curl-alpine` ([v0.3.0-curl-alpine/Dockerfile](https://github.com/mpugach/docker_omnicored/blob/master/v0.3.0-curl-alpine/Dockerfile))
@@ -40,7 +41,7 @@ docker run --rm --name omnicore-server -it mpugach/omnicored \
   -printtoconsole
 ```
 
-for v0.6.0 
+for v0.7.0 
 
 `docker-compose` example:
 
