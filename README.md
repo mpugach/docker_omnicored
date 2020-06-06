@@ -41,7 +41,7 @@ docker run --rm --name omnicore-server -it mpugach/omnicored \
   -printtoconsole
 ```
 
-for v0.7.0 
+for v0.7.0 and above
 
 `docker-compose` example:
 
