@@ -51,7 +51,7 @@ RUN cd $BITCOIN_REPO && \
 
 FROM alpine:3.8 
 
-LABEL maintainer="Maksym Pugach <pugach.m@gmail.com>, Daniel Zhou <danichau93@gmail.com>, Jack <admin@nightc.com>, Kayuii <577738@qq.com>"
+LABEL maintainer="Maksym Pugach <pugach.m@gmail.com>, Daniel Zhou <danichau93@gmail.com>, Jack <admin@nightc.com>, Kayuii <577738@qq.com>, um1st <um1statl1st@gmail.com>"
 
 ENV BITCOIN_ROOT=/omnicore 
 ENV BITCOIN_DATA="${BITCOIN_ROOT}/data" PATH="${BITCOIN_ROOT}/bin:$PATH"
